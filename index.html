@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Paper collected by Wang</title>
+<title>arXiv Papers of Industrial Anomaly Detection</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 
@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -41,9 +41,8 @@ span#abs{
 }
 </style>
 </head>
-<body>
-
-</p></br></br><div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2511.22595.pdf' target='_blank'>https://arxiv.org/pdf/2511.22595.pdf</a></span>   <span><a href='https://github.com/HUST-SLOW/AnoRefiner' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Dayou Huang, Feng Xue, Xurui Li, Yu Zhou
+<body><div id='title' style='font-size:1.3em; font-weight:bold;'>arXiv Papers of Industrial Anomaly Detection</div><br>
+<div id='section'>Paperid: <span id='pid'>1, <a href='https://arxiv.org/pdf/2511.22595.pdf' target='_blank'>https://arxiv.org/pdf/2511.22595.pdf</a></span>   <span><a href='https://github.com/HUST-SLOW/AnoRefiner' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Dayou Huang, Feng Xue, Xurui Li, Yu Zhou
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2511.22595">AnoRefiner: Anomaly-Aware Group-Wise Refinement for Zero-Shot Industrial Anomaly Detection</a></div></span></div><div id = 'abs'>Abstract:</br> <span id = 'abs'>Zero-shot industrial anomaly detection (ZSAD) methods typically yield coarse anomaly maps as vision transformers (ViTs) extract patch-level features only. To solve this, recent solutions attempt to predict finer anomalies using features from ZSAD, but they still struggle to recover fine-grained anomalies without missed detections, mainly due to the gap between randomly synthesized training anomalies and real ones. We observe that anomaly score maps exactly provide complementary spatial cues that are largely absent from ZSAD's image features, a fact overlooked before. Inspired by this, we propose an anomaly-aware refiner (AnoRefiner) that can be plugged into most ZSAD models and improve patch-level anomaly maps to the pixel level. First, we design an anomaly refinement decoder (ARD) that progressively enhances image features using anomaly score maps, reducing the reliance on synthetic anomaly data. Second, motivated by the mass production paradigm, we propose a progressive group-wise test-time training (PGT) strategy that trains ARD in each product group for the refinement process in the next group, while staying compatible with any ZSAD method. Experiments on the MVTec AD and VisA datasets show that AnoRefiner boosts various ZSAD models by up to a 5.2\% gain in pixel-AP metrics, which can also be directly observed in many visualizations. The code will be available at https://github.com/HUST-SLOW/AnoRefiner.
 <div id='section'>Paperid: <span id='pid'>2, <a href='https://arxiv.org/pdf/2511.05966.pdf' target='_blank'>https://arxiv.org/pdf/2511.05966.pdf</a></span>   <span><a href='https://github.com/Sunny5250/CIF' target='_blank'>  GitHub</a></span></div></span></div><div id = 'author'>Authors:<span id = 'author'>Yuxuan Lin, Hanjing Yan, Xuan Tong, Yang Chang, Huanzhen Wang, Ziheng Zhou, Shuyong Gao, Yan Wang, Wenqiang Zhang
 </span></div><div id="title">Title: <a href="https://arxiv.org/html/2511.05966">Commonality in Few: Few-Shot Multimodal Anomaly Detection via Hypergraph-Enhanced Memory</a></div></span></div><div id = 'abs'>Abstract:</br> <span id = 'abs'>Few-shot multimodal industrial anomaly detection is a critical yet underexplored task, offering the ability to quickly adapt to complex industrial scenarios. In few-shot settings, insufficient training samples often fail to cover the diverse patterns present in test samples. This challenge can be mitigated by extracting structural commonality from a small number of training samples. In this paper, we propose a novel few-shot unsupervised multimodal industrial anomaly detection method based on structural commonality, CIF (Commonality In Few). To extract intra-class structural information, we employ hypergraphs, which are capable of modeling higher-order correlations, to capture the structural commonality within training samples, and use a memory bank to store this intra-class structural prior. Firstly, we design a semantic-aware hypergraph construction module tailored for single-semantic industrial images, from which we extract common structures to guide the construction of the memory bank. Secondly, we use a training-free hypergraph message passing module to update the visual features of test samples, reducing the distribution gap between test features and features in the memory bank. We further propose a hyperedge-guided memory search module, which utilizes structural information to assist the memory search process and reduce the false positive rate. Experimental results on the MVTec 3D-AD dataset and the Eyecandies dataset show that our method outperforms the state-of-the-art (SOTA) methods in few-shot settings. Code is available at https://github.com/Sunny5250/CIF.
